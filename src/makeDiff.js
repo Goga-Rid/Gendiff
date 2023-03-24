@@ -16,11 +16,15 @@ if(!Object.hasOwn(object2, key)){
 }
 
 if(object1[key] === object2[key]){
-    return {type: 'uchanged', value: object1[key], key};
+    return {type: 'unchanged', value: object1[key], key};
 }
 
 if(object1[key] !== object2[key]){
     return {type: 'updated', oldValue: object1[key], value: object2[key], key};
+}
+
+if(_.isPlainObject(object1[key]) && _.isPlainObject(object2[key])) {
+    return {type: 'nested', children: makeDiff(object1[key], object2[key]), key}; 
 }
 
 });
