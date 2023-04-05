@@ -1,5 +1,5 @@
 const formatJson = (diffTree) => {
-    JSON.stringify(diffTree);
+    return JSON.stringify(diffTree);
 };
 
 export default formatJson;

@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Goga-Rid/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Goga-Rid/frontend-project-46/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df25c091d052102941a0/maintainability)](https://codeclimate.com/github/Goga-Rid/frontend-project-46/maintainability)
 
 # Gendiff: Gendiff — is a console utility that takes two data structures as input and outputs their differences in the course of former changes.
 
@@ -39,3 +40,6 @@ Options:
 ## Examples of work: 
 **Comparison of flat files (JSON)**
 [![asciicast](https://asciinema.org/a/tcFv6GYSN3Ls7zsCF2S6nyh0u.svg)](https://asciinema.org/a/tcFv6GYSN3Ls7zsCF2S6nyh0u)
+
+**Comparison of flat files (Yaml, yml)**
+[![asciicast](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL.svg)](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL)
