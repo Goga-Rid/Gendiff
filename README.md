@@ -2,7 +2,9 @@
 [![Actions Status](https://github.com/Goga-Rid/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Goga-Rid/frontend-project-46/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df25c091d052102941a0/maintainability)](https://codeclimate.com/github/Goga-Rid/frontend-project-46/maintainability)
 
-# Gendiff: Gendiff — is a console utility that takes two data structures as input and outputs their differences in the course of former changes.
+# Gendiff
+
+***Gendiff — is a console utility that takes two data structures as input and outputs their differences in the course of former changes.***
 
 ## Information about features
 
