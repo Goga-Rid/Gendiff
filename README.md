@@ -45,3 +45,6 @@ Options:
 
 **Comparison of flat files (Yaml, yml)**
 [![asciicast](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL.svg)](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL)
+
+**Recursive comparison of files with a nested structure**
+[![asciicast](https://asciinema.org/a/koSDI5HwpcjOKC0e4X7GmdUJw.svg)](https://asciinema.org/a/koSDI5HwpcjOKC0e4X7GmdUJw)
