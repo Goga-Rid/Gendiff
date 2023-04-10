@@ -5,8 +5,6 @@ name: Node CI
 on:
   - push
 
-env:
-  CI: true
 
 jobs:
   build:
@@ -33,6 +31,7 @@ jobs:
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         env:
+          CI: true
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
            coverageCommand: make test-coverage
