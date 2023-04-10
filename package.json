@@ -24,6 +24,7 @@
     "commander": "^10.0.0",
     "fs": "0.0.1-security",
     "gendiff": "^1.0.0",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
