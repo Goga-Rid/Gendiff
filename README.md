@@ -1,6 +1,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Goga-Rid/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Goga-Rid/frontend-project-46/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df25c091d052102941a0/maintainability)](https://codeclimate.com/github/Goga-Rid/frontend-project-46/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df25c091d052102941a0/test_coverage)](https://codeclimate.com/github/Goga-Rid/frontend-project-46/test_coverage)
+[![Node CI](https://github.com/Goga-Rid/frontend-project-46/actions/workflows/nodejs.yml/badge.svg)](https://github.com/Goga-Rid/frontend-project-46/actions/workflows/nodejs.yml)
 
 # Gendiff
 
