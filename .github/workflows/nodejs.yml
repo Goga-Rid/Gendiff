@@ -10,7 +10,7 @@ env:
 
 jobs:
   build:
-
+  linting:
     runs-on: ubuntu-latest
 
     strategy:
@@ -35,5 +35,5 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-           coverageCommand: make test-coverage
-           debug: true
+          coverageCommand: make test-coverage
+          debug: true
