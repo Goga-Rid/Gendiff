@@ -2,13 +2,14 @@ import formatStylish from './stylish.js'
 import formatJson from './json.js';
 
 const formatDiff = (diffTree, format) => {
-  if (format === 'stylish') {
-    return formatStylish(diffTree);
+  switch(format){
+    case 'stylish':
+      return formatStylish(diffTree);
+    case 'json':
+      return formatJson(diffTree);
+    default:
+      throw new Error('Unfortunately, this format is not supported.');
   }
-  if (format === 'json') {
-    return formatJson(diffTree);
-  }
-  throw new Error('Unfortunately, this format is not supported.');
 };
   
 export default formatDiff;

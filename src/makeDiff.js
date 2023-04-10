@@ -18,9 +18,10 @@ if(!Object.hasOwn(object2, key)){
 if(object1[key] === object2[key]){
     return {type: 'unchanged', value: object1[key], key};
 }
-
-if(object1[key] !== object2[key]){
-    return {type: 'updated', oldValue: object1[key], value: object2[key], key};
+if (typeof object1[key] !== "object" || typeof object2[key] !== "object"){
+    if(object1[key] !== object2[key]){
+        return {type: 'updated', oldValue: object1[key], value: object2[key], key};
+    }
 }
 
 if(_.isPlainObject(object1[key]) && _.isPlainObject(object2[key])) {
@@ -33,3 +34,5 @@ return result;
 };
 
 export default makeDiff;
+
+//typeof object1[key] === "object" && typeof object2[key] === "object"
