@@ -24,6 +24,8 @@ describe('Correct format testing', () => {
 
     expect(genDiff(file1, file2, 'stylish')).toEqual(expStylish);
 
+    expect(genDiff(file1, file2, 'stylish')).toEqual(expStylish);
+
     expect(genDiff(file1, file2, 'json')).toEqual(expJson);
     expect(genDiff(file1, file2, 'json')).toEqual(expJson);
 
