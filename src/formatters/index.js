@@ -2,7 +2,7 @@ import formatStylish from './stylish.js';
 import formatJson from './json.js';
 import formatPlain from './plain.js';
 
-const formatDiff = (diffTree, format) => {
+const formatDiff = (diffTree, format = 'stylish') => {
   switch (format) {
     case 'stylish':
       return formatStylish(diffTree);
