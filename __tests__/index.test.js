@@ -22,8 +22,7 @@ describe('Correct format testing', () => {
     const file1 = path.join(__dirname, '..', '__fixtures__', `file3.${extension}`);
     const file2 = path.join(__dirname, '..', '__fixtures__', `file4.${extension}`);
 
-
-    expect(genDiff(file1, file2, undefined)).toEqual(expStylish);
+    expect(genDiff(file1, file2)).toEqual(expStylish);
 
     expect(genDiff(file1, file2, 'stylish')).toEqual(expStylish);
 
