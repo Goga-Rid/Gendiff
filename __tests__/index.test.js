@@ -12,15 +12,16 @@ const fullReadFile = (filename) => fs.readFileSync(getFixturePath(filename), 'ut
 
 // ----------------------------------Variables storing the correct data are further used to check--------------------------------------------------
 const extentions = ['json', 'yml'];
-const format = ['stylish', 'plain'];
+const formats = ['stylish', 'plain'];
 const expStylish = fullReadFile('expectedStylishFormat.txt');
 const expJson = fullReadFile('expectedJsonFormat.txt');
 const expPlain = fullReadFile('expectedPlainFormat.txt');
-// -----------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------
 describe('Correct format testing', () => {
   test.each(extentions)('testing %s', (extension) => {
-    const file1 = `${process.cwd()}/__fixtures__/file3.${extension}`;
-    const file2 = `${process.cwd()}/__fixtures__/file4.${extension}`;
+    const file1 = path.join(__dirname, '..', '__fixtures__', `file3.${extension}`);
+    const file2 = path.join(__dirname, '..', '__fixtures__', `file4.${extension}`);
+
 
     expect(genDiff(file1, file2, undefined)).toEqual(expStylish);
 
@@ -52,7 +53,7 @@ describe('Check the wrong extension', () => {
 });
 
 describe('Check for incorrect type of file change', () => {
-  test.each(format)('testing %s', () => {
+  test.each(formats)('testing %s', () => {
     const data = [
       { key: 'name', type: 'nested', children: [] },
       { key: 'age', type: 'added', value: 12 },
