@@ -22,7 +22,7 @@ describe('Correct format testing', () => {
     const file1 = `${process.cwd()}/__fixtures__/file3.${extension}`;
     const file2 = `${process.cwd()}/__fixtures__/file4.${extension}`;
 
-    expect(genDiff(file1, file2)).toEqual(expStylish);
+    expect(genDiff(file1, file2, undefined)).toEqual(expStylish);
 
     expect(genDiff(file1, file2, 'stylish')).toEqual(expStylish);
 
