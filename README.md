@@ -42,11 +42,17 @@ Options:
 ```
 
 ## Examples of work: 
-**Comparison of flat files (JSON)**
+**Comparison of flat files (.JSON)**
 [![asciicast](https://asciinema.org/a/tcFv6GYSN3Ls7zsCF2S6nyh0u.svg)](https://asciinema.org/a/tcFv6GYSN3Ls7zsCF2S6nyh0u)
 
-**Comparison of flat files (Yaml, yml)**
+**Comparison of flat files (.Yaml, .yml)**
 [![asciicast](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL.svg)](https://asciinema.org/a/sdgcdDFEHlGagBYMlMdQ26FxL)
 
-**Recursive comparison of files with a nested structure**
+**Recursive comparison of files with a nested structure - format Stylish (.JSON)**
 [![asciicast](https://asciinema.org/a/koSDI5HwpcjOKC0e4X7GmdUJw.svg)](https://asciinema.org/a/koSDI5HwpcjOKC0e4X7GmdUJw)
+
+**Recursive comparison of files with a nested structure - format Plain (.JSON)**
+[![asciicast](https://asciinema.org/a/lEcKHCzmZEUg3KZOD2ZUWLBrE.svg)](https://asciinema.org/a/lEcKHCzmZEUg3KZOD2ZUWLBrE)
+
+**compare files using - format Json (.JSON)**
+[![asciicast](https://asciinema.org/a/Q9mGh2hd5J43qE4M5jzZjNsri.svg)](https://asciinema.org/a/Q9mGh2hd5J43qE4M5jzZjNsri)
