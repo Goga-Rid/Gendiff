@@ -7,7 +7,7 @@ import formatPlain from '../src/formatters/plain.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', 'expectedOutput', filename);
+const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const fullReadFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
 // ----------------------------------Variables storing the correct data are further used to check--------------------------------------------------
@@ -19,8 +19,8 @@ const expPlain = fullReadFile('expectedPlainFormat.txt');
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 describe('Correct format testing', () => {
   test.each(extentions)('testing %s', (extension) => {
-    const file1 = path.join(__dirname, '..', '__fixtures__', `file3.${extension}`);
-    const file2 = path.join(__dirname, '..', '__fixtures__', `file4.${extension}`);
+    const file1 = getFixturePath(`file3.${extension}`);
+    const file2 = getFixturePath(`file4.${extension}`);
 
     expect(genDiff(file1, file2)).toEqual(expStylish);
 
