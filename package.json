@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Goga-Rid/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Goga-Rid/frontend-project-46/actions)",
+  "description": " is a console utility that takes two data structures as input and outputs their differences in the course of former changes.",
   "main": "src/index.js",
   "type": "module",
   "bin": {
